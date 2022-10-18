@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+<title>Cadastro de produtos</title>
+</head>
+
+<body>
+<form action="cadastroProduto.php" method="POST">
+
+<h1 align="center"> Cadastro de Produtos </h1>
+<fieldset>
+<legend> Dados do Produto </legend>
+
+<table>
+
+	<tr>
+	<td>
+		<label for="codigo">Codigo:</label>
+   </td>
+   <td>
+		<input type="number" name="codigo" id="codigo" required="required" placeholder="Insira o codigo do produto" min="1" max="99999999"/> </br> </br>
+	</tr>
+	</td>
+	
+	<tr>
+	<td>
+		<label for="descricao"> Descrição:</label> </br>
+	</td>
+	<td>
+		<textarea name="descricao" id="descricao" placeholder="Escreva a descrição do produto" required="required" ></textarea> </br> </br>
+	</tr>
+	</td>
+	
+	<tr>
+	<td>
+		<label for="valor">Valor:</label>
+   </td>
+   <td>
+		<input type="number" name="valor" id="valor" required="required" placeholder="Insira o valor do produto" min="1" max="9999999"/> </br> </br>
+  	</tr>
+	</td>
+	
+	<tr>
+	<td>  
+		<label for="quantEstoque">Quantidade de Estoque:</label>
+   </td>
+   <td>
+		<input type="text" name="quantEstoque" id="quantEstoque" required="required" placeholder="Insira a quantidade"/> </br> </br>
+   	</tr>
+	</td>
+	
+   <tr>
+	<td>
+		<label for"dataRegistro"> Data de Cadastro:</label>
+   </td>
+   <td>
+		<input type="date" name="dataRegistro" id="dataRegistro" required="required" > </br> </br>
+	</tr>
+	</td>
+	
+	</table>
+	</fieldset> </br>
+	
+		<input type="submit" value="Enviar"/>  <input type="reset" name="reset" value="Limpar"/> </br>
+
+</form>
+</body>
+</html>
